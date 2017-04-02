@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StringCollectionViewCell" customModule="MVVMSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="66"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="String content:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjy-y9-3KB">
+                        <rect key="frame" x="20" y="9" width="112.5" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="McN-Wl-Hg3"/>
+                            <constraint firstAttribute="width" constant="112.5" id="rqy-Vp-vF8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5Q-Xk-IPm">
+                        <rect key="frame" x="140.5" y="9" width="186.5" height="49"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.4646459691" green="0.48437583509999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Rjy-y9-3KB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="29C-44-ie6"/>
+                <constraint firstAttribute="bottom" secondItem="v5Q-Xk-IPm" secondAttribute="bottom" constant="8" id="B3Y-9c-EkD"/>
+                <constraint firstAttribute="bottom" secondItem="Rjy-y9-3KB" secondAttribute="bottom" constant="8" id="QSe-RL-SXZ"/>
+                <constraint firstItem="v5Q-Xk-IPm" firstAttribute="leading" secondItem="Rjy-y9-3KB" secondAttribute="trailing" constant="8" id="aDo-m7-EXO"/>
+                <constraint firstAttribute="trailing" secondItem="v5Q-Xk-IPm" secondAttribute="trailing" constant="8" id="g0r-oe-US3"/>
+                <constraint firstItem="v5Q-Xk-IPm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="gSg-9Z-LTA"/>
+                <constraint firstItem="Rjy-y9-3KB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="pJ2-Yf-EIN"/>
+            </constraints>
+            <size key="customSize" width="335" height="50"/>
+            <connections>
+                <outlet property="titleLabel" destination="v5Q-Xk-IPm" id="ZwI-om-ZIG"/>
+            </connections>
+            <point key="canvasLocation" x="167.5" y="52"/>
+        </collectionViewCell>
+    </objects>
+</document>

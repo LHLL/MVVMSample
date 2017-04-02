@@ -15,7 +15,14 @@
 		BA6E372D1E8CD3CA0006C7B1 /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E372C1E8CD3CA0006C7B1 /* ApplicationService.swift */; };
 		BA6E372F1E8CD76A0006C7B1 /* DependencyLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E372E1E8CD76A0006C7B1 /* DependencyLoadingService.swift */; };
 		BA6E37311E8CD7C70006C7B1 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E37301E8CD7C70006C7B1 /* Reachability.swift */; };
-		BA6E37371E8CDAC20006C7B1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E37361E8CDAC20006C7B1 /* DataSource.swift */; };
+		BA6E37371E8CDAC20006C7B1 /* CollectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */; };
+		BAFBC3241E903AB0002B1927 /* StringCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBC3231E903AB0002B1927 /* StringCellVM.swift */; };
+		BAFBC3261E904250002B1927 /* IntegerCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBC3251E904250002B1927 /* IntegerCellVM.swift */; };
+		BAFBC3291E9046A9002B1927 /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBC3281E9046A9002B1927 /* AnotherViewController.swift */; };
+		BAFBC32C1E90474E002B1927 /* StringCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBC32A1E90474E002B1927 /* StringCollectionViewCell.swift */; };
+		BAFBC32D1E90474E002B1927 /* StringCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAFBC32B1E90474E002B1927 /* StringCollectionViewCell.xib */; };
+		BAFBC3301E90544B002B1927 /* IntegerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBC32E1E90544B002B1927 /* IntegerCollectionViewCell.swift */; };
+		BAFBC3311E90544B002B1927 /* IntegerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAFBC32F1E90544B002B1927 /* IntegerCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +36,14 @@
 		BA6E372C1E8CD3CA0006C7B1 /* ApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationService.swift; sourceTree = "<group>"; };
 		BA6E372E1E8CD76A0006C7B1 /* DependencyLoadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyLoadingService.swift; sourceTree = "<group>"; };
 		BA6E37301E8CD7C70006C7B1 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		BA6E37361E8CDAC20006C7B1 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionFactory.swift; sourceTree = "<group>"; };
+		BAFBC3231E903AB0002B1927 /* StringCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCellVM.swift; sourceTree = "<group>"; };
+		BAFBC3251E904250002B1927 /* IntegerCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerCellVM.swift; sourceTree = "<group>"; };
+		BAFBC3281E9046A9002B1927 /* AnotherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
+		BAFBC32A1E90474E002B1927 /* StringCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCollectionViewCell.swift; sourceTree = "<group>"; };
+		BAFBC32B1E90474E002B1927 /* StringCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringCollectionViewCell.xib; sourceTree = "<group>"; };
+		BAFBC32E1E90544B002B1927 /* IntegerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerCollectionViewCell.swift; sourceTree = "<group>"; };
+		BAFBC32F1E90544B002B1927 /* IntegerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntegerCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				BA6E37351E8CDA160006C7B1 /* VVVVVVVVVVVM */,
-				BA6E372B1E8CD3B40006C7B1 /* ApplicationService */,
+				BAFBC3271E904512002B1927 /* Model */,
 				BA6E372A1E8CD32B0006C7B1 /* Massive */,
 				BA6E37331E8CD7DC0006C7B1 /* View */,
-				BA6E37321E8CD7CB0006C7B1 /* Module */,
 				BA6E37291E8CD3090006C7B1 /* SupportingFiles */,
 			);
 			path = MVVMSample;
@@ -87,6 +100,7 @@
 			children = (
 				BA6E37171E8CD2D30006C7B1 /* AppDelegate.swift */,
 				BA6E37191E8CD2D30006C7B1 /* ViewController.swift */,
+				BAFBC3281E9046A9002B1927 /* AnotherViewController.swift */,
 			);
 			name = Massive;
 			sourceTree = "<group>";
@@ -100,18 +114,14 @@
 			name = ApplicationService;
 			sourceTree = "<group>";
 		};
-		BA6E37321E8CD7CB0006C7B1 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				BA6E37301E8CD7C70006C7B1 /* Reachability.swift */,
-			);
-			name = Module;
-			sourceTree = "<group>";
-		};
 		BA6E37331E8CD7DC0006C7B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				BA6E371B1E8CD2D30006C7B1 /* Main.storyboard */,
+				BAFBC32A1E90474E002B1927 /* StringCollectionViewCell.swift */,
+				BAFBC32B1E90474E002B1927 /* StringCollectionViewCell.xib */,
+				BAFBC32E1E90544B002B1927 /* IntegerCollectionViewCell.swift */,
+				BAFBC32F1E90544B002B1927 /* IntegerCollectionViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -119,9 +129,20 @@
 		BA6E37351E8CDA160006C7B1 /* VVVVVVVVVVVM */ = {
 			isa = PBXGroup;
 			children = (
-				BA6E37361E8CDAC20006C7B1 /* DataSource.swift */,
+				BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */,
+				BAFBC3231E903AB0002B1927 /* StringCellVM.swift */,
+				BAFBC3251E904250002B1927 /* IntegerCellVM.swift */,
 			);
 			name = VVVVVVVVVVVM;
+			sourceTree = "<group>";
+		};
+		BAFBC3271E904512002B1927 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA6E37301E8CD7C70006C7B1 /* Reachability.swift */,
+				BA6E372B1E8CD3B40006C7B1 /* ApplicationService */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +205,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFBC3311E90544B002B1927 /* IntegerCollectionViewCell.xib in Resources */,
 				BA6E37221E8CD2D30006C7B1 /* LaunchScreen.storyboard in Resources */,
 				BA6E371F1E8CD2D30006C7B1 /* Assets.xcassets in Resources */,
 				BA6E371D1E8CD2D30006C7B1 /* Main.storyboard in Resources */,
+				BAFBC32D1E90474E002B1927 /* StringCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,12 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6E37371E8CDAC20006C7B1 /* DataSource.swift in Sources */,
+				BAFBC3261E904250002B1927 /* IntegerCellVM.swift in Sources */,
+				BAFBC3301E90544B002B1927 /* IntegerCollectionViewCell.swift in Sources */,
+				BA6E37371E8CDAC20006C7B1 /* CollectionFactory.swift in Sources */,
+				BAFBC3241E903AB0002B1927 /* StringCellVM.swift in Sources */,
 				BA6E371A1E8CD2D30006C7B1 /* ViewController.swift in Sources */,
 				BA6E372D1E8CD3CA0006C7B1 /* ApplicationService.swift in Sources */,
 				BA6E37181E8CD2D30006C7B1 /* AppDelegate.swift in Sources */,
 				BA6E37311E8CD7C70006C7B1 /* Reachability.swift in Sources */,
 				BA6E372F1E8CD76A0006C7B1 /* DependencyLoadingService.swift in Sources */,
+				BAFBC3291E9046A9002B1927 /* AnotherViewController.swift in Sources */,
+				BAFBC32C1E90474E002B1927 /* StringCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +392,7 @@
 				BA6E37281E8CD2D30006C7B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,7 +14,7 @@ class Reachability {
     
     /*
      Why private? Educate your user, I create singlton, so you have to use it. 
-     Under protest? Sorry, I am psycho contral freak.
+     Under protest? Sorry, I am psycho control freak.
     */
     private init(){}
     

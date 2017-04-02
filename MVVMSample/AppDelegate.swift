@@ -16,7 +16,8 @@ class AppDelegate: LifeCycleService {
         return [    /*
                        Here is checkin list and checkin is mandatory for every one!
                     */
-                    LifeCycleService()
+                    LifeCycleService(),
+                    DependencyLoading()
                ]
     }
 }
