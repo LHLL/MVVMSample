@@ -1,5 +1,5 @@
 # MVVMSample
-This is Generic reusable (one one file, drag and drop) UICollectionView Model.
+This is Generic reusable (one file:CollectionViewFactory, drag and drop) UICollectionView Model.
 Adoptes MVVM design pattern.
 
 
