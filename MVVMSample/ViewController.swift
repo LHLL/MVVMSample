@@ -14,17 +14,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        myBeautifulList.register(UINib(nibName: "StringCollectionViewCell", bundle: nil),
+                                 forCellWithReuseIdentifier: "stringCell")
+        myBeautifulList.register(UINib(nibName: "IntegerCollectionViewCell", bundle: nil),
+                                 forCellWithReuseIdentifier: "IntCell")
         CollectionFactory.shared.delegate = self
-        CollectionFactory.shared.registerViewModel(vm: StringCellVM(),type: String.self as! AnyClass)
-        CollectionFactory.shared.registerViewModel(vm: IntegerCellVM(),type: Int.self as! AnyClass)
+        CollectionFactory.shared.registerViewModel(vm: StringCellVM())
+        CollectionFactory.shared.registerViewModel(vm: IntegerCellVM())
         myBeautifulList.dataSource = CollectionFactory.shared
         myBeautifulList.delegate = CollectionFactory.shared
         automaticallyAdjustsScrollViewInsets = false
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        myBeautifulList.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +32,5 @@ class ViewController: UIViewController {
 }
 
 extension ViewController:FactoryDataSource{
-    //I told you it should be Anyclass instead of Any
-    var dataContainer:[Any]{return ["one",1,"two","2","three",3,"Four","4","five",5]}
+    var dataContainer:[Any]{return ["one",1,"two",2,"three",3,"Four",4,"five",5]}
 }

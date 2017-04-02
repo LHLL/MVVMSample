@@ -9,6 +9,7 @@
 import UIKit
 
 class IntegerCellVM:Tags {
+    var type: Any = 0
     var viewSize:CGSize{return CGSize(width: 244, height: 44)}
     var identifier:String{return "IntCell"}
     fileprivate var realData:Int = 0
@@ -23,6 +24,7 @@ class IntegerCellVM:Tags {
 extension IntegerCellVM:IntegerCellProtocol {
     var number:Int{return realData}
     func viberateHandler(sender:UIButton){
+        print(123)
         let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         animation.duration = 0.6

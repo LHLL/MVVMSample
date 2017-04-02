@@ -17,20 +17,21 @@ class IntegerCollectionViewCell: WFCollectionCell {
 
     @IBOutlet weak var numBtn: UIButton!
     
-    var handler:((_ sender:UIButton)->Void)!
+    private var vm:IntegerCellVM!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
+    @IBAction func vibrate(_ sender: UIButton) {
+        vm.viberateHandler(sender: sender)
+    }
+    
     override func configureCell<T>(t: T) {
         if t is IntegerCellVM {
             numBtn.setTitle("\((t as! IntegerCellVM).number)", for: .normal)
-            handler = {
-                (t as! IntegerCellVM).viberateHandler(sender:)
-            }()
-            numBtn.addTarget(self, action: #selector(getter: handler), for: .touchUpInside)
+            vm = (t as! IntegerCellVM)
         }
     }
 }

@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
-        <!--SecondCollection-->
+        <!--Jay has signed off-->
         <scene sceneID="Pag-iL-pXf">
             <objects>
-                <viewController title="SecondCollection" id="XhM-6t-rlE" customClass="AnotherViewController" customModule="MVVMSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Jay has signed off" id="XhM-6t-rlE" customClass="AnotherViewController" customModule="MVVMSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d6r-eT-y5f"/>
                         <viewControllerLayoutGuide type="bottom" id="4LJ-gh-wd4"/>
@@ -87,7 +87,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zGP-C8-xvE">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="zGP-C8-xvE">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -106,6 +106,9 @@
                             <constraint firstAttribute="trailing" secondItem="bCd-U7-A2A" secondAttribute="trailing" id="xlT-fa-kzy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myBeautifulList" destination="bCd-U7-A2A" id="BbN-bV-Q6R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ntC-om-CtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

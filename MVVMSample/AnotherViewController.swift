@@ -9,25 +9,27 @@
 import UIKit
 
 class AnotherViewController: UIViewController {
+    
+    @IBOutlet weak var myBeautifulList: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        myBeautifulList.register(UINib(nibName: "ThirdCollectionViewCell", bundle: nil),
+                                 forCellWithReuseIdentifier: "ImgCell")
+        CollectionFactory.shared.delegate = self
+        CollectionFactory.shared.registerViewModel(vm: ThirdCellVM())
+        myBeautifulList.dataSource = CollectionFactory.shared
+        myBeautifulList.delegate = CollectionFactory.shared
+        automaticallyAdjustsScrollViewInsets = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+}
 
+extension AnotherViewController:FactoryDataSource{
+    var dataContainer:[Any]{return [#imageLiteral(resourceName: "gg"),#imageLiteral(resourceName: "aa"),#imageLiteral(resourceName: "bb"),#imageLiteral(resourceName: "ss")]}
 }

@@ -16,6 +16,9 @@
 		BA6E372F1E8CD76A0006C7B1 /* DependencyLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E372E1E8CD76A0006C7B1 /* DependencyLoadingService.swift */; };
 		BA6E37311E8CD7C70006C7B1 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E37301E8CD7C70006C7B1 /* Reachability.swift */; };
 		BA6E37371E8CDAC20006C7B1 /* CollectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */; };
+		BAABCA661E90E9A80061C3CA /* ThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABCA641E90E9A80061C3CA /* ThirdCollectionViewCell.swift */; };
+		BAABCA671E90E9A80061C3CA /* ThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAABCA651E90E9A80061C3CA /* ThirdCollectionViewCell.xib */; };
+		BAABCA691E90EB1E0061C3CA /* ThirdCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABCA681E90EB1E0061C3CA /* ThirdCellVM.swift */; };
 		BAFBC3241E903AB0002B1927 /* StringCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBC3231E903AB0002B1927 /* StringCellVM.swift */; };
 		BAFBC3261E904250002B1927 /* IntegerCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBC3251E904250002B1927 /* IntegerCellVM.swift */; };
 		BAFBC3291E9046A9002B1927 /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBC3281E9046A9002B1927 /* AnotherViewController.swift */; };
@@ -37,6 +40,9 @@
 		BA6E372E1E8CD76A0006C7B1 /* DependencyLoadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyLoadingService.swift; sourceTree = "<group>"; };
 		BA6E37301E8CD7C70006C7B1 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionFactory.swift; sourceTree = "<group>"; };
+		BAABCA641E90E9A80061C3CA /* ThirdCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCollectionViewCell.swift; sourceTree = "<group>"; };
+		BAABCA651E90E9A80061C3CA /* ThirdCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCollectionViewCell.xib; sourceTree = "<group>"; };
+		BAABCA681E90EB1E0061C3CA /* ThirdCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCellVM.swift; sourceTree = "<group>"; };
 		BAFBC3231E903AB0002B1927 /* StringCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCellVM.swift; sourceTree = "<group>"; };
 		BAFBC3251E904250002B1927 /* IntegerCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerCellVM.swift; sourceTree = "<group>"; };
 		BAFBC3281E9046A9002B1927 /* AnotherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +128,8 @@
 				BAFBC32B1E90474E002B1927 /* StringCollectionViewCell.xib */,
 				BAFBC32E1E90544B002B1927 /* IntegerCollectionViewCell.swift */,
 				BAFBC32F1E90544B002B1927 /* IntegerCollectionViewCell.xib */,
+				BAABCA641E90E9A80061C3CA /* ThirdCollectionViewCell.swift */,
+				BAABCA651E90E9A80061C3CA /* ThirdCollectionViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 				BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */,
 				BAFBC3231E903AB0002B1927 /* StringCellVM.swift */,
 				BAFBC3251E904250002B1927 /* IntegerCellVM.swift */,
+				BAABCA681E90EB1E0061C3CA /* ThirdCellVM.swift */,
 			);
 			name = VVVVVVVVVVVM;
 			sourceTree = "<group>";
@@ -205,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAABCA671E90E9A80061C3CA /* ThirdCollectionViewCell.xib in Resources */,
 				BAFBC3311E90544B002B1927 /* IntegerCollectionViewCell.xib in Resources */,
 				BA6E37221E8CD2D30006C7B1 /* LaunchScreen.storyboard in Resources */,
 				BA6E371F1E8CD2D30006C7B1 /* Assets.xcassets in Resources */,
@@ -223,9 +233,11 @@
 				BAFBC3261E904250002B1927 /* IntegerCellVM.swift in Sources */,
 				BAFBC3301E90544B002B1927 /* IntegerCollectionViewCell.swift in Sources */,
 				BA6E37371E8CDAC20006C7B1 /* CollectionFactory.swift in Sources */,
+				BAABCA691E90EB1E0061C3CA /* ThirdCellVM.swift in Sources */,
 				BAFBC3241E903AB0002B1927 /* StringCellVM.swift in Sources */,
 				BA6E371A1E8CD2D30006C7B1 /* ViewController.swift in Sources */,
 				BA6E372D1E8CD3CA0006C7B1 /* ApplicationService.swift in Sources */,
+				BAABCA661E90E9A80061C3CA /* ThirdCollectionViewCell.swift in Sources */,
 				BA6E37181E8CD2D30006C7B1 /* AppDelegate.swift in Sources */,
 				BA6E37311E8CD7C70006C7B1 /* Reachability.swift in Sources */,
 				BA6E372F1E8CD76A0006C7B1 /* DependencyLoadingService.swift in Sources */,

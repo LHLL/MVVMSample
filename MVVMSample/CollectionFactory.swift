@@ -2,8 +2,8 @@
 //  DataSource.swift
 //  MVVMSample
 //
-//  Created by 李玲 on 3/29/17.
-//  Copyright © 2017 Jay. All rights reserved.
+//  Created by ASAJ on 3/29/17.
+//  Copyright © 2017 ASAJ. All rights reserved.
 //
 
 import UIKit
@@ -12,6 +12,7 @@ import UIKit
 //Why class? -----------------  You have to be a class to adopt UICollectionViewDataSource 🤷‍♀️
 //                           🔝
 protocol FactoryDataSource:class{
+    //This holds data coming from each controller.
     var dataContainer:[Any]{get}
 }
 
@@ -20,7 +21,8 @@ class CollectionFactory:NSObject {
     //Why vms become private now? Because this can become super duper ugly if you have a lot of viewmodels
     //Thanks for keeping my factory clean
     fileprivate var vms:[Tags] = [Tags]()
-    fileprivate var types:[AnyClass] = [AnyClass]()
+    //Why weak?
+    //Come on, if you really asked this question, please resign.
     weak var delegate:FactoryDataSource?
     
     /*
@@ -30,11 +32,10 @@ class CollectionFactory:NSObject {
     private override init() {}
     
     //Hotel reception: please register your view model here, yes, all of them, "where is your ID?"
-    func registerViewModel(vm:Tags,type:AnyClass){
-        let exist = vms.contains {type(of: $0) == type(of:vm)}
+    func registerViewModel(vm:Tags){
+        let exist = vms.contains {object_getClassName($0.type) == object_getClassName(vm.type)}
         if !exist {
             vms.append(vm)
-            types.append(type)
         }
     }
 }
@@ -48,15 +49,14 @@ extension CollectionFactory:UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        for i in 0..<vms.count {
-            guard types[i] === type(of: delegate!.dataContainer[indexPath.row]) as! AnyClass else{break}
-            vms[i].updateData(delegate!.dataContainer[indexPath.row])
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier:vms[i].identifier, for: indexPath)
-            
-            //As I said, you have to subclass WFCollectionCell
-            guard cell is WFCollectionCell else {break}
-            (cell as! WFCollectionCell).configureCell(t: vms[i])
-            return cell
+        for vm in vms {
+            if object_getClassName(vm.type) == object_getClassName(delegate!.dataContainer[indexPath.row]) {
+                vm.updateData(delegate!.dataContainer[indexPath.row])
+                //If you forget to subclassWFCollectionCell, App will crash because next line!!!!
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier:vm.identifier, for: indexPath) as! WFCollectionCell
+                cell.configureCell(t: vm)
+                return cell
+            }
         }
         return UICollectionViewCell()
     }
@@ -67,9 +67,10 @@ extension CollectionFactory:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        for i in 0..<vms.count {
-            guard types[i] === type(of: delegate!.dataContainer[indexPath.row]) as! AnyClass else{break}
-            return vms[i].viewSize
+        for vm in vms{
+            if object_getClassName(vm.type) == object_getClassName(delegate!.dataContainer[indexPath.row]){
+                return vm.viewSize
+            }
         }
         return CGSize.zero
     }
@@ -82,6 +83,9 @@ protocol WFCollectionCellDataSource{
     var viewSize:CGSize{get}
     //This is your cell reuse identifier
     var identifier:String{get}
+    //This is your cell's associated type
+    //I know there is AssociatedType for protocol, it just doesn't work
+    var type:Any{get}
     /*
      Useage:
      class VM:Tags {
@@ -95,6 +99,9 @@ protocol WFCollectionCellDataSource{
     func updateData(_ data:Any)
 }
 
+//I have this empty protocol here for you to add any methods you need for p164 here.
+//Why we have two separate protocols when we can just have one?
+//Because I like separating them, bite me?
 protocol WFCollectionCellDelegate {}
 
 /*
