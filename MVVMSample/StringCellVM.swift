@@ -9,6 +9,7 @@
 import UIKit
 
 class StringCellVM:Tags {
+    
     var viewSize:CGSize{return CGSize(width: 335, height: 66)}
     var identifier:String{return "stringCell"}
     var type: Any = "String"

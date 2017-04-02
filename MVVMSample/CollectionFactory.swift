@@ -33,8 +33,8 @@ class CollectionFactory:NSObject {
     
     //Hotel reception: please register your view model here, yes, all of them, "where is your ID?"
     func registerViewModel(vm:Tags){
-        let exist = vms.contains {object_getClassName($0.type) == object_getClassName(vm.type)}
-        if !exist {
+        let existed = vms.contains {object_getClassName($0.type) == object_getClassName(vm.type)}
+        if !existed {
             vms.append(vm)
         }
     }
@@ -43,7 +43,7 @@ class CollectionFactory:NSObject {
 extension CollectionFactory:UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //In case someone forget to set delegate, don't laugh, it could happen to anyone, not only baby dev.
+        //In case someone forgets to set delegate, don't laugh, it could happen to anyone, not only baby dev.
         guard let _ = delegate else {return 0}
         return delegate!.dataContainer.count
     }
@@ -52,7 +52,7 @@ extension CollectionFactory:UICollectionViewDataSource {
         for vm in vms {
             if object_getClassName(vm.type) == object_getClassName(delegate!.dataContainer[indexPath.row]) {
                 vm.updateData(delegate!.dataContainer[indexPath.row])
-                //If you forget to subclassWFCollectionCell, App will crash because next line!!!!
+                //If you forget to subclassWFCollectionCell, App will crash because of next line!!!!
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier:vm.identifier, for: indexPath) as! WFCollectionCell
                 cell.configureCell(t: vm)
                 return cell

@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
-        <!--Jay has signed off-->
+        <!--GG-->
         <scene sceneID="Pag-iL-pXf">
             <objects>
-                <viewController title="Jay has signed off" id="XhM-6t-rlE" customClass="AnotherViewController" customModule="MVVMSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GG" id="XhM-6t-rlE" customClass="AnotherViewController" customModule="MVVMSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d6r-eT-y5f"/>
                         <viewControllerLayoutGuide type="bottom" id="4LJ-gh-wd4"/>
