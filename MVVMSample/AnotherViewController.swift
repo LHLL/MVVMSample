@@ -23,7 +23,7 @@ class AnotherViewController: UIViewController {
         CollectionFactory.shared.delegate = self
         
         // 3. Register xib's associated view model
-        CollectionFactory.shared.registerViewModel(vm: ThirdCellVM())
+        let _ = CollectionFactory.shared.registerViewModel(vm: ThirdCellVM())
         
         // 4. Hook up
         myBeautifulList.dataSource = CollectionFactory.shared

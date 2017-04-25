@@ -24,8 +24,8 @@ class ViewController: UIViewController {
         CollectionFactory.shared.delegate = self
         
         // 3. Register all xibs' associated view models
-        CollectionFactory.shared.registerViewModel(vm: StringCellVM())
-        CollectionFactory.shared.registerViewModel(vm: IntegerCellVM())
+        let _ = CollectionFactory.shared.registerViewModel(vm: StringCellVM())
+        let _ = CollectionFactory.shared.registerViewModel(vm: IntegerCellVM())
         
         // 4. Hook up
         myBeautifulList.dataSource = CollectionFactory.shared
@@ -42,5 +42,5 @@ class ViewController: UIViewController {
 
 extension ViewController:FactoryDataSource{
     //This is simulate data from server, so it can have different types of class coverted from Json
-    var dataContainer:[Any]{return ["one",1,"two",2,"three",3,"Four",4,"five",5]}
+    var dataContainer:[Any]{return [Account(n:"One"),1,Account(n:"Two"),2,Account(n:"Three"),3,Account(n:"Four"),4,Account(n:"Five"),5]}
 }

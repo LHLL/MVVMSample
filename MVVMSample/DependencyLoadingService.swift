@@ -13,6 +13,7 @@ class DependencyLoading:NSObject, ApplicationService {
     func applicationDidFinishLaunching(_ application: UIApplication) {
         //Let's pretend to have a Reachability class
         Reachability.shared.checkInternetAccessbility()
+
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

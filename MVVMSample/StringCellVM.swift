@@ -12,16 +12,16 @@ class StringCellVM:Tags {
     
     var viewSize:CGSize{return CGSize(width: 335, height: 66)}
     var identifier:String{return "stringCell"}
-    var type: Any = "String"
-    fileprivate var realData:String!
+    var type: Any = Account(n:"Sample")
+    fileprivate var realData:Account!
     
     func updateData(_ data: Any) {
-        if data is String {
-            self.realData = data as! String
+        if data is Account {
+            self.realData = data as! Account
         }
     }
 }
 
 extension StringCellVM:StringCellDataSource {
-    var title:String{return realData}
+    var title:String{return realData.name}
 }

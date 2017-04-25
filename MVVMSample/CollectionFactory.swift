@@ -16,13 +16,13 @@ protocol FactoryDataSource:class{
     var dataContainer:[Any]{get}
 }
 
-class CollectionFactory:NSObject {
+final class CollectionFactory:NSObject {
     static let shared = CollectionFactory()
+    
     //Why vms become private now? Because this can become super duper ugly if you have a lot of viewmodels
     //Thanks for keeping my factory clean
     fileprivate var vms:[Tags] = [Tags]()
-    //Why weak?
-    //Come on, if you really asked this question, please resign.
+    
     weak var delegate:FactoryDataSource?
     
     /*
@@ -31,11 +31,14 @@ class CollectionFactory:NSObject {
      */
     private override init() {}
     
-    //Hotel reception: please register your view model here, yes, all of them, "where is your ID?"
-    func registerViewModel(vm:Tags){
-        let existed = vms.contains {object_getClassName($0.type) == object_getClassName(vm.type)}
-        if !existed {
+    //Why you want to return this? Because some viewModel has delegate which viewControler needs to implement.
+    func registerViewModel(vm:Tags)->Tags{
+        let existed = vms.filter {object_getClassName($0.type) == object_getClassName(vm.type)}
+        if existed.isEmpty {
             vms.append(vm)
+            return vm
+        }else {
+            return existed.first!
         }
     }
 }
@@ -86,6 +89,7 @@ protocol WFCollectionCellDataSource{
     //This is your cell's associated type
     //I know there is AssociatedType for protocol, it just doesn't work
     var type:Any{get}
+
     /*
      Useage:
      class VM:Tags {

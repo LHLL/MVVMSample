@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KGk-i7-Jjw" customClass="ContentCell" customModule="MVVMSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1g-hW-bya">
+                        <rect key="frame" x="20" y="14" width="35" height="35"/>
+                        <color key="backgroundColor" red="0.18807233400000001" green="0.75010466890000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="Kwx-Vm-kYK"/>
+                            <constraint firstAttribute="height" constant="35" id="dtB-zO-MZL"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFB-QX-3VV">
+                        <rect key="frame" x="67" y="8" width="245" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="47" id="we2-eW-Xac"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cFB-QX-3VV" secondAttribute="trailing" constant="8" id="5WG-EF-PsS"/>
+                    <constraint firstItem="g1g-hW-bya" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="EBO-AJ-M4N"/>
+                    <constraint firstItem="cFB-QX-3VV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Lmg-6v-zTt"/>
+                    <constraint firstItem="g1g-hW-bya" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dWB-6b-hWK"/>
+                    <constraint firstItem="cFB-QX-3VV" firstAttribute="leading" secondItem="g1g-hW-bya" secondAttribute="trailing" constant="12" id="qiv-eJ-O4J"/>
+                    <constraint firstAttribute="bottom" secondItem="cFB-QX-3VV" secondAttribute="bottom" priority="750" constant="8" id="xXa-ZF-Mer"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="cFB-QX-3VV" id="dCM-Te-usc"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="61.5"/>
+        </tableViewCell>
+    </objects>
+</document>
