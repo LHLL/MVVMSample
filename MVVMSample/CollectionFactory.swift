@@ -52,16 +52,17 @@ extension CollectionFactory:UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        var cell:UICollectionViewCell?
         for vm in vms {
             if object_getClassName(vm.type) == object_getClassName(delegate!.dataContainer[indexPath.row]) {
                 vm.updateData(delegate!.dataContainer[indexPath.row])
                 //If you forget to subclassWFCollectionCell, App will crash because of next line!!!!
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier:vm.identifier, for: indexPath) as! WFCollectionCell
-                cell.configureCell(t: vm)
-                return cell
+                cell = collectionView.dequeueReusableCell(withReuseIdentifier:vm.identifier, for: indexPath) as! WFCollectionCell
+                (cell as! WFCollectionCell).configureCell(t: vm)
+                break
             }
         }
-        return UICollectionViewCell()
+        return cell ?? UICollectionViewCell()
     }
 }
 
@@ -74,6 +75,7 @@ extension CollectionFactory:UICollectionViewDelegateFlowLayout{
             if object_getClassName(vm.type) == object_getClassName(delegate!.dataContainer[indexPath.row]){
                 return vm.viewSize
             }
+            break
         }
         return CGSize.zero
     }

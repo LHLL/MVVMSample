@@ -56,15 +56,16 @@ extension TableFactory:UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell:UITableViewCell!
         for vm in vms {
             if object_getClassName(vm.type) == object_getClassName(delegate!.dataContainer[indexPath.section][indexPath.row]) {
                 vm.updateData(delegate!.dataContainer[indexPath.section][indexPath.row])
-                let cell = tableView.dequeueReusableCell(withIdentifier: vm.identifier, for: indexPath) as! GenericCell
-                cell.configureCell(t: vm)
-                return cell
+                cell = tableView.dequeueReusableCell(withIdentifier: vm.identifier, for: indexPath)
+                (cell as! GenericCell).configureCell(t: vm)
+                break
             }
         }
-        return UITableViewCell()
+        return cell ?? UITableViewCell()
     }
 }
 
@@ -75,28 +76,31 @@ extension TableFactory:UITableViewDelegate {
         for vm in vms {
             if object_getClassName(vm.type) == object_getClassName(delegate!.dataContainer[indexPath.section][indexPath.row]) {
                 vm.selectionHandler(indexPath)
+                break
             }
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        var height:CGFloat!
         for vm in vms {
             if object_getClassName(vm.type) == object_getClassName(delegate!.dataContainer[indexPath.section][indexPath.row]) {
-                return vm.viewHight
+                height = vm.viewHight
             }
         }
-        return UITableViewAutomaticDimension
+        return height ?? UITableViewAutomaticDimension
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        var height:CGFloat!
         for header in headers {
             guard delegate!.headerContainer != nil else {return UITableViewAutomaticDimension}
             if object_getClassName(header.type) == object_getClassName(delegate!.headerContainer![section]) {
-                return header.viewHight
+                height = header.viewHight
             }
         }
         //Line 98 will cause an empty gray header, if you dont want any headerView, set 0
-        return UITableViewAutomaticDimension
+        return height ?? UITableViewAutomaticDimension
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
