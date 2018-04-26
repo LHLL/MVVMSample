@@ -2,8 +2,8 @@
 //  TableViewManager.swift
 //  TableViewManager
 //
-//  Created by Xu, Jay on 4/2/17.
-//  Copyright © 2017 Xu, Jay. All rights reserved.
+//  Created by ASAJ on 4/2/17.
+//  Copyright © 2017 ASAJ. All rights reserved.
 //
 
 import UIKit

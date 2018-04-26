@@ -28,6 +28,7 @@
 		BA6E372F1E8CD76A0006C7B1 /* DependencyLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E372E1E8CD76A0006C7B1 /* DependencyLoadingService.swift */; };
 		BA6E37371E8CDAC20006C7B1 /* CollectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */; };
 		BA8125A8209169030058087C /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8125A7209169030058087C /* TableViewManager.swift */; };
+		BA8125AA20917F040058087C /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8125A920917F040058087C /* TableViewModel.swift */; };
 		BAABCA661E90E9A80061C3CA /* ThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABCA641E90E9A80061C3CA /* ThirdCollectionViewCell.swift */; };
 		BAABCA671E90E9A80061C3CA /* ThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAABCA651E90E9A80061C3CA /* ThirdCollectionViewCell.xib */; };
 		BAABCA691E90EB1E0061C3CA /* ThirdCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABCA681E90EB1E0061C3CA /* ThirdCellVM.swift */; };
@@ -64,6 +65,7 @@
 		BA6E372E1E8CD76A0006C7B1 /* DependencyLoadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyLoadingService.swift; sourceTree = "<group>"; };
 		BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionFactory.swift; sourceTree = "<group>"; };
 		BA8125A7209169030058087C /* TableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
+		BA8125A920917F040058087C /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		BAABCA641E90E9A80061C3CA /* ThirdCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCollectionViewCell.swift; sourceTree = "<group>"; };
 		BAABCA651E90E9A80061C3CA /* ThirdCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCollectionViewCell.xib; sourceTree = "<group>"; };
 		BAABCA681E90EB1E0061C3CA /* ThirdCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCellVM.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				BA04036F1EAEDBA200829005 /* TableViewController.swift */,
+				BA8125A920917F040058087C /* TableViewModel.swift */,
 			);
 			name = TableVC;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				BA6E371A1E8CD2D30006C7B1 /* ViewController.swift in Sources */,
 				BA04037E1EAEEA9300829005 /* HeaderVM.swift in Sources */,
 				BA6E372D1E8CD3CA0006C7B1 /* ApplicationService.swift in Sources */,
+				BA8125AA20917F040058087C /* TableViewModel.swift in Sources */,
 				BAABCA661E90E9A80061C3CA /* ThirdCollectionViewCell.swift in Sources */,
 				BA6E37181E8CD2D30006C7B1 /* AppDelegate.swift in Sources */,
 				BA0403801EAEF5EA00829005 /* Utility.swift in Sources */,
