@@ -2,8 +2,8 @@
 //  TableViewManager.swift
 //  TableViewManager
 //
-//  Created by Xu, Jay on 4/2/18.
-//  Copyright © 2018 Wells Fargo. All rights reserved.
+//  Created by Xu, Jay on 4/2/17.
+//  Copyright © 2017 Xu, Jay. All rights reserved.
 //
 
 import UIKit
