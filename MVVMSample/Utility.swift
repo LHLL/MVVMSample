@@ -20,7 +20,6 @@ extension Shakeable where Self:UIView{
         layer.add(animation, forKey: "position")
     }
 }
-extension GenericHeaderView:Shakeable{}
 
 protocol Shrinkable{}
 extension Shrinkable where Self:UIView {

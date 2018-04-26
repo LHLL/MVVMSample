@@ -14,28 +14,27 @@ protocol ContentCellVMDelegate{
 
 class ContentCellVM {
     var delegate:ContentCellVMDelegate!
-    fileprivate var realData:String!
+    private var realData:Content!
 }
 
-extension ContentCellVM:CellTags{
-    
-    var viewHight:CGFloat{return UITableViewAutomaticDimension}
+extension ContentCellVM:Manageable{
     
     var identifier:String{return "BeautifulCell"}
     
-    var type:Any{return ""}
+    var type:AnyClass{return Content.self}
     
-    func updateData(_ data:Any) {
-        if data is String {
-            realData = data as! String
+    func updateData(data:Any) {
+        if data is Content {
+            realData = data as! Content
         }
     }
     
-    func selectionHandler(_ indexPath: IndexPath) {
+    func didSelectRow(at indexPath: IndexPath) {
         delegate.didSelectCell(indexPath)
     }
 }
 
 extension ContentCellVM:ContentCellDataSource {
-    var title:String{return realData}
+    var title:String{return realData.content}
+    var color:UIColor{return realData.color}
 }

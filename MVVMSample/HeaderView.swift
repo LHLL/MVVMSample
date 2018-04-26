@@ -12,7 +12,7 @@ protocol HeaderViewDataSource {
     var title:String{get}
 }
 
-class HeaderView:GenericHeaderView {
+class HeaderView:UIView {
 
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var progress: UIProgressView!
@@ -22,41 +22,7 @@ class HeaderView:GenericHeaderView {
     private var timer:Timer!
 
     @IBAction func trigger(_ sender: UISwitch) {
-        if !sender.isOn {
-            timer.invalidate()
-            self.progress.progress = 0
-        }
-        updateHandler(section)
-        reverse = !reverse
+        
     }
     
-    override func configureHeaderView<T>(t: T) {
-        if t is HeaderVM {
-            statusLabel.text = (t as! HeaderVM).title
-        }
-    }
-    
-    override func updateUI() {
-        if !reverse {
-            self.top.constant = -2
-            self.progress.isHidden = true
-        }else {
-            self.top.constant = 8
-            self.progress.isHidden = false
-            countDown()
-        }
-    }
-    
-    private func countDown(){
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (timer) in
-            guard self.progress.progress != 1 else {
-                timer.invalidate()
-                self.shake()
-                return
-            }
-            DispatchQueue.main.async {
-                self.progress.progress += 0.1
-            }
-        })
-    }
 }

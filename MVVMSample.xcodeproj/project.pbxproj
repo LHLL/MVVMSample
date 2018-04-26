@@ -10,7 +10,6 @@
 		BA0403651EAED72200829005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0403641EAED72200829005 /* Main.storyboard */; };
 		BA0403681EAED76800829005 /* Table.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0403671EAED76800829005 /* Table.storyboard */; };
 		BA04036B1EAED79500829005 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04036A1EAED79500829005 /* HomeViewController.swift */; };
-		BA04036E1EAED95C00829005 /* TableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04036D1EAED95C00829005 /* TableFactory.swift */; };
 		BA0403701EAEDBA200829005 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04036F1EAEDBA200829005 /* TableViewController.swift */; };
 		BA0403741EAEDEB000829005 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0403721EAEDEB000829005 /* ContentCell.swift */; };
 		BA0403751EAEDEB000829005 /* ContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA0403731EAEDEB000829005 /* ContentCell.xib */; };
@@ -27,8 +26,8 @@
 		BA6E37221E8CD2D30006C7B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6E37201E8CD2D30006C7B1 /* LaunchScreen.storyboard */; };
 		BA6E372D1E8CD3CA0006C7B1 /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E372C1E8CD3CA0006C7B1 /* ApplicationService.swift */; };
 		BA6E372F1E8CD76A0006C7B1 /* DependencyLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E372E1E8CD76A0006C7B1 /* DependencyLoadingService.swift */; };
-		BA6E37311E8CD7C70006C7B1 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E37301E8CD7C70006C7B1 /* Reachability.swift */; };
 		BA6E37371E8CDAC20006C7B1 /* CollectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */; };
+		BA8125A8209169030058087C /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8125A7209169030058087C /* TableViewManager.swift */; };
 		BAABCA661E90E9A80061C3CA /* ThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABCA641E90E9A80061C3CA /* ThirdCollectionViewCell.swift */; };
 		BAABCA671E90E9A80061C3CA /* ThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAABCA651E90E9A80061C3CA /* ThirdCollectionViewCell.xib */; };
 		BAABCA691E90EB1E0061C3CA /* ThirdCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABCA681E90EB1E0061C3CA /* ThirdCellVM.swift */; };
@@ -45,7 +44,6 @@
 		BA0403641EAED72200829005 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BA0403671EAED76800829005 /* Table.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Table.storyboard; sourceTree = "<group>"; };
 		BA04036A1EAED79500829005 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		BA04036D1EAED95C00829005 /* TableFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableFactory.swift; sourceTree = "<group>"; };
 		BA04036F1EAEDBA200829005 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BA0403721EAEDEB000829005 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		BA0403731EAEDEB000829005 /* ContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
@@ -64,8 +62,8 @@
 		BA6E37231E8CD2D30006C7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6E372C1E8CD3CA0006C7B1 /* ApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationService.swift; sourceTree = "<group>"; };
 		BA6E372E1E8CD76A0006C7B1 /* DependencyLoadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyLoadingService.swift; sourceTree = "<group>"; };
-		BA6E37301E8CD7C70006C7B1 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionFactory.swift; sourceTree = "<group>"; };
+		BA8125A7209169030058087C /* TableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
 		BAABCA641E90E9A80061C3CA /* ThirdCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCollectionViewCell.swift; sourceTree = "<group>"; };
 		BAABCA651E90E9A80061C3CA /* ThirdCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCollectionViewCell.xib; sourceTree = "<group>"; };
 		BAABCA681E90EB1E0061C3CA /* ThirdCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCellVM.swift; sourceTree = "<group>"; };
@@ -171,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				BA6E37361E8CDAC20006C7B1 /* CollectionFactory.swift */,
-				BA04036D1EAED95C00829005 /* TableFactory.swift */,
+				BA8125A7209169030058087C /* TableViewManager.swift */,
 				BA6E37351E8CDA160006C7B1 /* VVVVVVVVVVVM */,
 				BAFBC3271E904512002B1927 /* Model */,
 				BA6E372A1E8CD32B0006C7B1 /* Massive */,
@@ -235,7 +233,6 @@
 			children = (
 				BA04037F1EAEF5EA00829005 /* Utility.swift */,
 				BA66B7601E989FD700700FEE /* Account.swift */,
-				BA6E37301E8CD7C70006C7B1 /* Reachability.swift */,
 				BA6E372B1E8CD3B40006C7B1 /* ApplicationService */,
 			);
 			name = Model;
@@ -268,7 +265,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Jay;
 				TargetAttributes = {
 					BA6E37131E8CD2D30006C7B1 = {
@@ -324,6 +321,7 @@
 				BA0403781EAEDF9400829005 /* ContentCellVM.swift in Sources */,
 				BAFBC3261E904250002B1927 /* IntegerCellVM.swift in Sources */,
 				BAFBC3301E90544B002B1927 /* IntegerCollectionViewCell.swift in Sources */,
+				BA8125A8209169030058087C /* TableViewManager.swift in Sources */,
 				BA0403701EAEDBA200829005 /* TableViewController.swift in Sources */,
 				BA0403741EAEDEB000829005 /* ContentCell.swift in Sources */,
 				BA6E37371E8CDAC20006C7B1 /* CollectionFactory.swift in Sources */,
@@ -336,11 +334,9 @@
 				BAABCA661E90E9A80061C3CA /* ThirdCollectionViewCell.swift in Sources */,
 				BA6E37181E8CD2D30006C7B1 /* AppDelegate.swift in Sources */,
 				BA0403801EAEF5EA00829005 /* Utility.swift in Sources */,
-				BA6E37311E8CD7C70006C7B1 /* Reachability.swift in Sources */,
 				BA6E372F1E8CD76A0006C7B1 /* DependencyLoadingService.swift in Sources */,
 				BA04037A1EAEE88400829005 /* HeaderView.swift in Sources */,
 				BAFBC3291E9046A9002B1927 /* AnotherViewController.swift in Sources */,
-				BA04036E1EAED95C00829005 /* TableFactory.swift in Sources */,
 				BAFBC32C1E90474E002B1927 /* StringCollectionViewCell.swift in Sources */,
 				BA66B7611E989FD700700FEE /* Account.swift in Sources */,
 			);
@@ -377,7 +373,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -385,7 +383,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -426,7 +428,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -434,7 +438,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -468,7 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jay.MVVMSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -481,7 +489,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jay.MVVMSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

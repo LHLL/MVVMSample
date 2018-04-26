@@ -12,15 +12,13 @@ class HeaderVM {
     fileprivate var realData:String!
 }
 
-extension HeaderVM:FactoryViewDataSource{
-    
-    var viewHight:CGFloat{return UITableViewAutomaticDimension}
+extension HeaderVM:Manageable{
     
     var identifier:String{return "HeaderView"}
     
-    var type:Any{return ""}
+    var type:AnyClass{return Content.self}
     
-    func updateData(_ data:Any){
+    func updateData(data:Any){
         if data is String {
             realData = data as! String
         }
