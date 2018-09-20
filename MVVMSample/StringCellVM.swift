@@ -7,17 +7,18 @@
 //
 
 import UIKit
+import JXCollectionManager
 
-class StringCellVM:Tags {
+class StringCellVM:Manageable {
     
     var viewSize:CGSize{return CGSize(width: 335, height: 66)}
     var identifier:String{return "stringCell"}
-    var type: Any = Account(n:"Sample")
-    fileprivate var realData:Account!
+    var type: AnyClass = Account.self
+    private var realData:Account!
     
-    func updateData(_ data: Any) {
-        if data is Account {
-            self.realData = data as! Account
+    func updateData(data: Any) {
+        if let data = data as? Account {
+            self.realData = data
         }
     }
 }

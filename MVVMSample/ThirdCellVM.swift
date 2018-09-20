@@ -7,14 +7,14 @@
 //
 
 import UIKit
+import JXCollectionManager
 
-class ThirdCellVM:Tags {
-    var type: Any = UIImage()
+class ThirdCellVM:Manageable {
+    var type: AnyClass = UIImage.self
     var viewSize:CGSize{return CGSize(width: UIScreen.main.bounds.width, height: 128)}
     var identifier:String{return "ImgCell"}
     fileprivate var realData:UIImage = UIImage()
-    
-    func updateData(_ data: Any) {
+    func updateData(data: Any) {
         if data is UIImage {
             self.realData = data as! UIImage
         }

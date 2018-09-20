@@ -7,6 +7,17 @@
 //
 
 import UIKit
+import JXTableManager
+
+class Content{
+    var color:UIColor
+    var content:String
+    
+    init(c:UIColor,str:String) {
+        color = c
+        content = str
+    }
+}
 
 protocol ContentCellVMDelegate{
     func didSelectCell(_ indexPath:IndexPath)
@@ -24,8 +35,8 @@ extension ContentCellVM:Manageable{
     var type:AnyClass{return Content.self}
     
     func updateData(data:Any) {
-        if data is Content {
-            realData = data as! Content
+        if let data = data as? Content {
+            realData = data 
         }
     }
     

@@ -1,0 +1,29 @@
+PODS:
+  - JXCollectionManager (1.0.1)
+  - JXTableManager (1.0.1)
+
+DEPENDENCIES:
+  - JXCollectionManager (from `https://github.com/LHLL/CollectionManager.git`)
+  - JXTableManager (from `https://github.com/LHLL/TableManager.git`)
+
+EXTERNAL SOURCES:
+  JXCollectionManager:
+    :git: https://github.com/LHLL/CollectionManager.git
+  JXTableManager:
+    :git: https://github.com/LHLL/TableManager.git
+
+CHECKOUT OPTIONS:
+  JXCollectionManager:
+    :commit: 6089dd7008716e19bf28e2ad5d1e64684542c2eb
+    :git: https://github.com/LHLL/CollectionManager.git
+  JXTableManager:
+    :commit: ccb76af89705acfd43a3dc341ee5d82f5f7eddaf
+    :git: https://github.com/LHLL/TableManager.git
+
+SPEC CHECKSUMS:
+  JXCollectionManager: 26b7bbaf99a97ab5a373dca72ab2a2bc455a9b3b
+  JXTableManager: 8e45c2231ba5c382a4747c9b6b0b651b3a7d2b81
+
+PODFILE CHECKSUM: ae472a8e0cc181ac17c83d5ddb518c39aac83d4a
+
+COCOAPODS: 1.5.3

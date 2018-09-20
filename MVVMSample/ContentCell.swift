@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JXTableManager
 
 protocol ContentCellDataSource {
     var title:String{get}

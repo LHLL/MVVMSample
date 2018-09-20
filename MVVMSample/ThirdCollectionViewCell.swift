@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import JXCollectionManager
 
 protocol ThirdDataSource {
     var img:UIImage{get}
 }
 
-class ThirdCollectionViewCell: WFCollectionCell {
+class ThirdCollectionViewCell: ManagedCollectionCell {
 
     @IBOutlet weak var thumbnail: UIImageView!
     

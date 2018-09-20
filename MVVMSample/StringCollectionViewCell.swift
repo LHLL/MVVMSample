@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JXCollectionManager
 
 /*
  Everytime you create one cell, make sure you follow steps:
@@ -20,7 +21,7 @@ protocol StringCellDataSource {
     var title:String{get}
 }
 
-class StringCollectionViewCell: WFCollectionCell {
+class StringCollectionViewCell: ManagedCollectionCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     

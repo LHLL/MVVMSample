@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JXTableManager
 
 class HeaderVM {
     fileprivate var realData:String!
@@ -19,8 +20,8 @@ extension HeaderVM:Manageable{
     var type:AnyClass{return Content.self}
     
     func updateData(data:Any){
-        if data is String {
-            realData = data as! String
+        if let data = data as? String {
+            realData = data
         }
     }
 }

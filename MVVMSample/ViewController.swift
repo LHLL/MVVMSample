@@ -7,40 +7,32 @@
 //
 
 import UIKit
+import JXCollectionManager
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var myBeautifulList: UICollectionView!
-
+    
+    private var manager = CollectionManager()
+    
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // 1. Register all xibs
         myBeautifulList.register(UINib(nibName: "StringCollectionViewCell", bundle: nil),
                                  forCellWithReuseIdentifier: "stringCell")
-        myBeautifulList.register(UINib(nibName: "IntegerCollectionViewCell", bundle: nil),
-                                 forCellWithReuseIdentifier: "IntCell")
-        // 2. Set Delegate
-        CollectionFactory.shared.delegate = self
         
         // 3. Register all xibs' associated view models
-        let _ = CollectionFactory.shared.registerViewModel(vm: StringCellVM())
-        let _ = CollectionFactory.shared.registerViewModel(vm: IntegerCellVM())
+        let _ = manager.registerViewModel(vm: StringCellVM())
         
         // 4. Hook up
-        myBeautifulList.dataSource = CollectionFactory.shared
-        myBeautifulList.delegate = CollectionFactory.shared
+        myBeautifulList.dataSource = manager
+        myBeautifulList.delegate = manager
         
         // 5. Bad Apple Code
         automaticallyAdjustsScrollViewInsets = false
+        manager.register(data: [Account(n:"One"),Account(n:"Two"),Account(n:"Three"),Account(n:"Four"),Account(n:"Five")],
+                         for: myBeautifulList)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-}
-
-extension ViewController:FactoryDataSource{
-    //This is simulate data from server, so it can have different types of class coverted from Json
-    var dataContainer:[Any]{return [Account(n:"One"),1,Account(n:"Two"),2,Account(n:"Three"),3,Account(n:"Four"),4,Account(n:"Five"),5]}
 }

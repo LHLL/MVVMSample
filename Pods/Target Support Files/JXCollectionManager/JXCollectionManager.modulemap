@@ -1,0 +1,6 @@
+framework module JXCollectionManager {
+  umbrella header "JXCollectionManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

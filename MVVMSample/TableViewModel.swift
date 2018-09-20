@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JXTableManager
 
 class TableViewModel{
     
@@ -51,15 +52,5 @@ class TableViewModel{
 extension TableViewModel:ContentCellVMDelegate {
     func didSelectCell(_ indexPath: IndexPath) {
         table?.cellForRow(at: indexPath)?.shrink()
-    }
-}
-
-class Content{
-    var color:UIColor
-    var content:String
-    
-    init(c:UIColor,str:String) {
-        color = c
-        content = str
     }
 }

@@ -1,0 +1,6 @@
+framework module JXTableManager {
+  umbrella header "JXTableManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import JXCollectionManager
 
 class AnotherViewController: UIViewController {
     
     @IBOutlet weak var myBeautifulList: UICollectionView!
 
+    private let manager = CollectionManager()
     //MARK:Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,26 +21,16 @@ class AnotherViewController: UIViewController {
         myBeautifulList.register(UINib(nibName: "ThirdCollectionViewCell", bundle: nil),
                                  forCellWithReuseIdentifier: "ImgCell")
         
-        // 2. Set Delegate
-        CollectionFactory.shared.delegate = self
-        
         // 3. Register xib's associated view model
-        let _ = CollectionFactory.shared.registerViewModel(vm: ThirdCellVM())
+        let _ = manager.registerViewModel(vm: ThirdCellVM())
         
         // 4. Hook up
-        myBeautifulList.dataSource = CollectionFactory.shared
-        myBeautifulList.delegate = CollectionFactory.shared
+        myBeautifulList.dataSource = manager
+        myBeautifulList.delegate = manager
         
         // 5. Bad Apple Code
         automaticallyAdjustsScrollViewInsets = false
+        
+        manager.register(data: [#imageLiteral(resourceName: "gg"),#imageLiteral(resourceName: "aa"),#imageLiteral(resourceName: "bb"),#imageLiteral(resourceName: "ss")], for: myBeautifulList)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-}
-
-extension AnotherViewController:FactoryDataSource{
-    var dataContainer:[Any]{return [#imageLiteral(resourceName: "gg"),#imageLiteral(resourceName: "aa"),#imageLiteral(resourceName: "bb"),#imageLiteral(resourceName: "ss")]}
 }
