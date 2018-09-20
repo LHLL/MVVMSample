@@ -11,7 +11,7 @@ import JXTableManager
 
 class TableViewModel{
     
-    private var manager = TableViewManager()
+    private var manager = JXTableViewManager()
     private weak var table:UITableView?
     
     func configTableView(_ tableview:UITableView) {

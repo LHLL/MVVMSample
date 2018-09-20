@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		016EF18F7F4F42764F7AD65E6D710BAE /* JXCollectionManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD7D8F32345E12B35CA2C410B1009B /* JXCollectionManager-dummy.m */; };
+		17315208C0813C646C339B3AE08DF0F2 /* JXTableManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2D2BAB5EAB730E2B6D5F71FE89AC9E /* JXTableManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D3A67B74A4FF6036CDFA91ADEF37C04 /* JXTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C1C077B6B406D731EAE18EDF37BD8 /* JXTableViewManager.swift */; };
 		23D4BE50C9021A940BD8932F5348A36B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		279F9A71387036602ED60AAE9CA9F9C1 /* TableManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B385DAEED7C7858F64B7BF37D363637C /* TableManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		442E4EDFCA2DBFD68376093A51EF7B4A /* Pods-MVVMSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D418161A445016980E8B8501A2C4C7D5 /* Pods-MVVMSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		618EA49F254E676A5616E4A208353ECE /* ManagedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31250C2FD750389A1B9CD7E6106FAEFC /* ManagedComponents.swift */; };
-		73319421F5905407D0307C0095B31824 /* ManagedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032B1C4C542FD841B05B12C340E9123F /* ManagedComponents.swift */; };
-		7672DB9398ED300C600E05CA4FA70045 /* JXCollectionManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D97EBE175C343483FD5EAA701AC4BCB /* JXCollectionManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C15A66CA36D827D487FE1389CCAA35A /* CollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD946A4DDB01FE89F9D4AEBB90436A /* CollectionManager.swift */; };
-		7CD8E02CF56E5B8CA693E2D9B5CDFFAA /* JXTableManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F27B080099860E74FB976316C368CD2C /* JXTableManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		839CE6012751FA4852C6761812F47E6C /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08ECED46A10F8D1ACFFF134E1054E6 /* TableViewManager.swift */; };
-		8CD2AA16C66CE4034DCF37CAA0967EA0 /* CollectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B95FE7B8E401886A4361FFC75BC84B1 /* CollectionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5268E0B246EE2B41EAC42624AE77950D /* JXCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A68F7D9CBA1A3247E1F6FF1F4B2D73 /* JXCollectionManager.swift */; };
+		53DD50DCC4CB012B30506732364EA2A6 /* JXTableManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB575795DC48C92AB10DD9F9E6B0DD3 /* JXTableManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55B3CBE47B7505280CDD3277B4911C74 /* CollectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0D2D37BD57BDFB83487E589501AB43 /* CollectionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7672DB9398ED300C600E05CA4FA70045 /* JXCollectionManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 217691E4C4DE76B23BC82929FA2F2CC8 /* JXCollectionManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CF80AA9434088FC832184BADDA828E1 /* ManagedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFCC21AA321315A6676FA8F9BE5AA1A /* ManagedComponents.swift */; };
+		8FCDA633718BD46A030BE6D8D820F42A /* JXCollectionManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00046946E51685D0FE5552B8E89178D0 /* JXCollectionManager-dummy.m */; };
 		9A1BFBB2E0189EEFA3B5348EF6B8F4A0 /* Pods-MVVMSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8455E009C80E605854F20B55EC69EE /* Pods-MVVMSample-dummy.m */; };
 		D0339C3ED5012D1EAC427C2EF7849451 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		E6903CF46ECC972AB6897CDECFD7CB80 /* JXTableManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF85C43EC1D462BB75C158A1D51B5FB /* JXTableManager-dummy.m */; };
+		D05A3F05F99B81F812AB3FFA5F55A095 /* ManagedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472F7761E8994E9BD36A765F5F8E705F /* ManagedComponents.swift */; };
+		E5C00AD59A0AB1363CE7108DCD4F08C8 /* JXTableManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBDDB0F0E9FA42044E19A1F6022342B /* JXTableManager-dummy.m */; };
 		EDEDEF74324E4AFD22E6D312D7252C24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,38 +42,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		032B1C4C542FD841B05B12C340E9123F /* ManagedComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManagedComponents.swift; path = CollectionManager/ManagedComponents.swift; sourceTree = "<group>"; };
+		00046946E51685D0FE5552B8E89178D0 /* JXCollectionManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXCollectionManager-dummy.m"; sourceTree = "<group>"; };
+		06F9DCD26BA477FD3BEE0157BF36BBCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10B7D5C4735F8CD05BAFFDE9BEEF4C4F /* JXCollectionManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXCollectionManager-prefix.pch"; sourceTree = "<group>"; };
 		177FAE46D20164A862EBAE6FC961B0E1 /* Pods-MVVMSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MVVMSample.modulemap"; sourceTree = "<group>"; };
-		1A62E0C42A3A872A1E7D7F94AB4873B6 /* JXTableManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXTableManager-prefix.pch"; sourceTree = "<group>"; };
-		31250C2FD750389A1B9CD7E6106FAEFC /* ManagedComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManagedComponents.swift; path = TableManager/ManagedComponents.swift; sourceTree = "<group>"; };
+		217691E4C4DE76B23BC82929FA2F2CC8 /* JXCollectionManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXCollectionManager-umbrella.h"; sourceTree = "<group>"; };
 		3C8455E009C80E605854F20B55EC69EE /* Pods-MVVMSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MVVMSample-dummy.m"; sourceTree = "<group>"; };
-		4F3C510A9E63D6C4EB78E1FB42410A37 /* JXCollectionManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXCollectionManager.xcconfig; sourceTree = "<group>"; };
+		472F7761E8994E9BD36A765F5F8E705F /* ManagedComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManagedComponents.swift; path = JXCollectionManager/ManagedComponents.swift; sourceTree = "<group>"; };
+		481C1C077B6B406D731EAE18EDF37BD8 /* JXTableViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXTableViewManager.swift; path = JXTableManager/JXTableViewManager.swift; sourceTree = "<group>"; };
 		52CBE5FDCF7338E74527E27B0ABFD2B1 /* JXCollectionManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXCollectionManager.framework; path = JXCollectionManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5B95FE7B8E401886A4361FFC75BC84B1 /* CollectionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CollectionManager.h; path = CollectionManager/CollectionManager.h; sourceTree = "<group>"; };
-		5D97EBE175C343483FD5EAA701AC4BCB /* JXCollectionManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXCollectionManager-umbrella.h"; sourceTree = "<group>"; };
-		6ABAC16FC52FC04E88937E356B6A15B0 /* JXTableManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXTableManager.modulemap; sourceTree = "<group>"; };
 		7190F4E27471EE86293BB081BF5B13B2 /* Pods-MVVMSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVVMSample.debug.xcconfig"; sourceTree = "<group>"; };
-		7330508DA0105210ABFA838F5C365AC5 /* JXCollectionManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXCollectionManager.modulemap; sourceTree = "<group>"; };
-		7AF85C43EC1D462BB75C158A1D51B5FB /* JXTableManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXTableManager-dummy.m"; sourceTree = "<group>"; };
-		8E08ECED46A10F8D1ACFFF134E1054E6 /* TableViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewManager.swift; path = TableManager/TableViewManager.swift; sourceTree = "<group>"; };
+		75598FD88FAAF9BF27A14E856DFB82C5 /* JXCollectionManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXCollectionManager.xcconfig; sourceTree = "<group>"; };
+		8FBDDB0F0E9FA42044E19A1F6022342B /* JXTableManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXTableManager-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9544C96E0053ABEE5975A2FDAEF4B828 /* Pods-MVVMSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MVVMSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		9A61382755F9CD6F2E1A072092197B92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5AD946A4DDB01FE89F9D4AEBB90436A /* CollectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionManager.swift; path = CollectionManager/CollectionManager.swift; sourceTree = "<group>"; };
+		9EB575795DC48C92AB10DD9F9E6B0DD3 /* JXTableManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTableManager.h; path = JXTableManager/JXTableManager.h; sourceTree = "<group>"; };
+		9F2D2BAB5EAB730E2B6D5F71FE89AC9E /* JXTableManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXTableManager-umbrella.h"; sourceTree = "<group>"; };
+		AAFCC21AA321315A6676FA8F9BE5AA1A /* ManagedComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManagedComponents.swift; path = JXTableManager/ManagedComponents.swift; sourceTree = "<group>"; };
 		AD8E1B65B596D2090139E19EFE0CEAD9 /* Pods_MVVMSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MVVMSample.framework; path = "Pods-MVVMSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FE43DA8746D68A9E188C5F86D16CA9 /* Pods-MVVMSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVVMSample.release.xcconfig"; sourceTree = "<group>"; };
-		B385DAEED7C7858F64B7BF37D363637C /* TableManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TableManager.h; path = TableManager/TableManager.h; sourceTree = "<group>"; };
-		BB872DB8BEA0E43036963ACEAD278644 /* JXTableManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXTableManager.xcconfig; sourceTree = "<group>"; };
-		BEDD7D8F32345E12B35CA2C410B1009B /* JXCollectionManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXCollectionManager-dummy.m"; sourceTree = "<group>"; };
-		BEF904B968672488335FAB42103DCE8D /* JXCollectionManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXCollectionManager-prefix.pch"; sourceTree = "<group>"; };
+		B180D8BA60A3CC4B101956DCA4DB2D63 /* JXTableManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXTableManager.xcconfig; sourceTree = "<group>"; };
+		B2A68F7D9CBA1A3247E1F6FF1F4B2D73 /* JXCollectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXCollectionManager.swift; path = JXCollectionManager/JXCollectionManager.swift; sourceTree = "<group>"; };
+		BD3FA8AC0436D2C79D09EA57959A3B3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C97882018A2B8F243FB50A1D8B285834 /* JXTableManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXTableManager.modulemap; sourceTree = "<group>"; };
+		CA0D2D37BD57BDFB83487E589501AB43 /* CollectionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CollectionManager.h; path = JXCollectionManager/CollectionManager.h; sourceTree = "<group>"; };
 		D418161A445016980E8B8501A2C4C7D5 /* Pods-MVVMSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MVVMSample-umbrella.h"; sourceTree = "<group>"; };
 		D74DDC0831D8FCC3F0E1CFB6736BA379 /* JXTableManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXTableManager.framework; path = JXTableManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4C52C4927A21C404D009E1930D1F15D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E33D00316FF0F2625C185928FEBB41E8 /* JXTableManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXTableManager-prefix.pch"; sourceTree = "<group>"; };
+		E6F054DDAE7BBD94D9F6F2D289EBD8C4 /* JXCollectionManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXCollectionManager.modulemap; sourceTree = "<group>"; };
 		EA308FD387B6937A070D673DCED02936 /* Pods-MVVMSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVVMSample-resources.sh"; sourceTree = "<group>"; };
 		EA8395467A06072DE65800D5F175680E /* Pods-MVVMSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVVMSample-frameworks.sh"; sourceTree = "<group>"; };
 		ED774B30D775623E5EB04A37CA77BE3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F27B080099860E74FB976316C368CD2C /* JXTableManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXTableManager-umbrella.h"; sourceTree = "<group>"; };
 		F570A3984BAE602A2A34AC4A469E0E79 /* Pods-MVVMSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MVVMSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,18 +105,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32E291D1D4D67EDA8D5114670FEC815A /* Support Files */ = {
+		029BED72CB55DE4ABC4972E122E57A91 /* JXCollectionManager */ = {
 			isa = PBXGroup;
 			children = (
-				E4C52C4927A21C404D009E1930D1F15D /* Info.plist */,
-				7330508DA0105210ABFA838F5C365AC5 /* JXCollectionManager.modulemap */,
-				4F3C510A9E63D6C4EB78E1FB42410A37 /* JXCollectionManager.xcconfig */,
-				BEDD7D8F32345E12B35CA2C410B1009B /* JXCollectionManager-dummy.m */,
-				BEF904B968672488335FAB42103DCE8D /* JXCollectionManager-prefix.pch */,
-				5D97EBE175C343483FD5EAA701AC4BCB /* JXCollectionManager-umbrella.h */,
+				CA0D2D37BD57BDFB83487E589501AB43 /* CollectionManager.h */,
+				B2A68F7D9CBA1A3247E1F6FF1F4B2D73 /* JXCollectionManager.swift */,
+				472F7761E8994E9BD36A765F5F8E705F /* ManagedComponents.swift */,
+				8BE062423BDA427F84ABD2AF13C46497 /* Support Files */,
+			);
+			name = JXCollectionManager;
+			path = JXCollectionManager;
+			sourceTree = "<group>";
+		};
+		3EA163B82CD25932281FDBA7511EDED0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06F9DCD26BA477FD3BEE0157BF36BBCE /* Info.plist */,
+				C97882018A2B8F243FB50A1D8B285834 /* JXTableManager.modulemap */,
+				B180D8BA60A3CC4B101956DCA4DB2D63 /* JXTableManager.xcconfig */,
+				8FBDDB0F0E9FA42044E19A1F6022342B /* JXTableManager-dummy.m */,
+				E33D00316FF0F2625C185928FEBB41E8 /* JXTableManager-prefix.pch */,
+				9F2D2BAB5EAB730E2B6D5F71FE89AC9E /* JXTableManager-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/JXCollectionManager";
+			path = "../Target Support Files/JXTableManager";
 			sourceTree = "<group>";
 		};
 		480F118F29B8FF3CAAC451869A01E921 /* Products */ = {
@@ -137,20 +149,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5A395B91F70237513E09560FC097A503 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A61382755F9CD6F2E1A072092197B92 /* Info.plist */,
-				6ABAC16FC52FC04E88937E356B6A15B0 /* JXTableManager.modulemap */,
-				BB872DB8BEA0E43036963ACEAD278644 /* JXTableManager.xcconfig */,
-				7AF85C43EC1D462BB75C158A1D51B5FB /* JXTableManager-dummy.m */,
-				1A62E0C42A3A872A1E7D7F94AB4873B6 /* JXTableManager-prefix.pch */,
-				F27B080099860E74FB976316C368CD2C /* JXTableManager-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JXTableManager";
-			sourceTree = "<group>";
-		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,23 +157,11 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6CA31422A91373C71C5375F5950EC36D /* JXTableManager */ = {
-			isa = PBXGroup;
-			children = (
-				31250C2FD750389A1B9CD7E6106FAEFC /* ManagedComponents.swift */,
-				B385DAEED7C7858F64B7BF37D363637C /* TableManager.h */,
-				8E08ECED46A10F8D1ACFFF134E1054E6 /* TableViewManager.swift */,
-				5A395B91F70237513E09560FC097A503 /* Support Files */,
-			);
-			name = JXTableManager;
-			path = JXTableManager;
-			sourceTree = "<group>";
-		};
 		730B255CAD1924864A9593424A2062A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AB52AD059A8B47B2EF7D6EE5CC3EB3BA /* JXCollectionManager */,
-				6CA31422A91373C71C5375F5950EC36D /* JXTableManager */,
+				029BED72CB55DE4ABC4972E122E57A91 /* JXCollectionManager */,
+				CB09216BAC8830805D11771DFA72EF21 /* JXTableManager */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -191,16 +177,18 @@
 			);
 			sourceTree = "<group>";
 		};
-		AB52AD059A8B47B2EF7D6EE5CC3EB3BA /* JXCollectionManager */ = {
+		8BE062423BDA427F84ABD2AF13C46497 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5B95FE7B8E401886A4361FFC75BC84B1 /* CollectionManager.h */,
-				A5AD946A4DDB01FE89F9D4AEBB90436A /* CollectionManager.swift */,
-				032B1C4C542FD841B05B12C340E9123F /* ManagedComponents.swift */,
-				32E291D1D4D67EDA8D5114670FEC815A /* Support Files */,
+				BD3FA8AC0436D2C79D09EA57959A3B3F /* Info.plist */,
+				E6F054DDAE7BBD94D9F6F2D289EBD8C4 /* JXCollectionManager.modulemap */,
+				75598FD88FAAF9BF27A14E856DFB82C5 /* JXCollectionManager.xcconfig */,
+				00046946E51685D0FE5552B8E89178D0 /* JXCollectionManager-dummy.m */,
+				10B7D5C4735F8CD05BAFFDE9BEEF4C4F /* JXCollectionManager-prefix.pch */,
+				217691E4C4DE76B23BC82929FA2F2CC8 /* JXCollectionManager-umbrella.h */,
 			);
-			name = JXCollectionManager;
-			path = JXCollectionManager;
+			name = "Support Files";
+			path = "../Target Support Files/JXCollectionManager";
 			sourceTree = "<group>";
 		};
 		AC9EE87C8017A7E436E3C032903AEC01 /* Pods-MVVMSample */ = {
@@ -229,6 +217,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB09216BAC8830805D11771DFA72EF21 /* JXTableManager */ = {
+			isa = PBXGroup;
+			children = (
+				9EB575795DC48C92AB10DD9F9E6B0DD3 /* JXTableManager.h */,
+				481C1C077B6B406D731EAE18EDF37BD8 /* JXTableViewManager.swift */,
+				AAFCC21AA321315A6676FA8F9BE5AA1A /* ManagedComponents.swift */,
+				3EA163B82CD25932281FDBA7511EDED0 /* Support Files */,
+			);
+			name = JXTableManager;
+			path = JXTableManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -240,12 +240,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CD825E90B9FB62FDDFF9BCF1A285D84 /* Headers */ = {
+		A7C7E74C9F55BD00241701D98880BC90 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CD8E02CF56E5B8CA693E2D9B5CDFFAA /* JXTableManager-umbrella.h in Headers */,
-				279F9A71387036602ED60AAE9CA9F9C1 /* TableManager.h in Headers */,
+				17315208C0813C646C339B3AE08DF0F2 /* JXTableManager-umbrella.h in Headers */,
+				53DD50DCC4CB012B30506732364EA2A6 /* JXTableManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +253,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CD2AA16C66CE4034DCF37CAA0967EA0 /* CollectionManager.h in Headers */,
+				55B3CBE47B7505280CDD3277B4911C74 /* CollectionManager.h in Headers */,
 				7672DB9398ED300C600E05CA4FA70045 /* JXCollectionManager-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +286,7 @@
 			buildConfigurationList = ED58083362AD7BCD0BC934BF0635598A /* Build configuration list for PBXNativeTarget "JXCollectionManager" */;
 			buildPhases = (
 				D5B69C740E6A5B7FB5715EB65CE3B1C8 /* Headers */,
-				2718BA1A36B3AE3EDBE847113790B731 /* Sources */,
+				6BD7A94F87D77355D370F5AC116CD030 /* Sources */,
 				7BB6FB1B5D2B6AF5F91AFD51449C7C91 /* Frameworks */,
 				A4B6F79914190C46BEECA9B0C549A6CC /* Resources */,
 			);
@@ -303,8 +303,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97F3FC4D5CD167CCD082DE30C50CC622 /* Build configuration list for PBXNativeTarget "JXTableManager" */;
 			buildPhases = (
-				4CD825E90B9FB62FDDFF9BCF1A285D84 /* Headers */,
-				F7B0C244A152F621986F4BEF7DCB2EDD /* Sources */,
+				A7C7E74C9F55BD00241701D98880BC90 /* Headers */,
+				43A176DFF02AEFAFCDA5E58CDA0371F1 /* Sources */,
 				E26239ED7DA5E5D606A22FBBDF3EB94D /* Frameworks */,
 				EE52945736FD9FBC2554A69DED8CA3B0 /* Resources */,
 			);
@@ -370,16 +370,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2718BA1A36B3AE3EDBE847113790B731 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7C15A66CA36D827D487FE1389CCAA35A /* CollectionManager.swift in Sources */,
-				016EF18F7F4F42764F7AD65E6D710BAE /* JXCollectionManager-dummy.m in Sources */,
-				73319421F5905407D0307C0095B31824 /* ManagedComponents.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		39F1230509A4515CC5EB92788CCC0708 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,13 +378,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7B0C244A152F621986F4BEF7DCB2EDD /* Sources */ = {
+		43A176DFF02AEFAFCDA5E58CDA0371F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6903CF46ECC972AB6897CDECFD7CB80 /* JXTableManager-dummy.m in Sources */,
-				618EA49F254E676A5616E4A208353ECE /* ManagedComponents.swift in Sources */,
-				839CE6012751FA4852C6761812F47E6C /* TableViewManager.swift in Sources */,
+				E5C00AD59A0AB1363CE7108DCD4F08C8 /* JXTableManager-dummy.m in Sources */,
+				1D3A67B74A4FF6036CDFA91ADEF37C04 /* JXTableViewManager.swift in Sources */,
+				8CF80AA9434088FC832184BADDA828E1 /* ManagedComponents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD7A94F87D77355D370F5AC116CD030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCDA633718BD46A030BE6D8D820F42A /* JXCollectionManager-dummy.m in Sources */,
+				5268E0B246EE2B41EAC42624AE77950D /* JXCollectionManager.swift in Sources */,
+				D05A3F05F99B81F812AB3FFA5F55A095 /* ManagedComponents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +491,7 @@
 		};
 		62B3AC8A4879897F8041CF1D9AD2FA15 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB872DB8BEA0E43036963ACEAD278644 /* JXTableManager.xcconfig */;
+			baseConfigurationReference = B180D8BA60A3CC4B101956DCA4DB2D63 /* JXTableManager.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -526,7 +526,7 @@
 		};
 		8033260335175509C5C1C255A5673769 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F3C510A9E63D6C4EB78E1FB42410A37 /* JXCollectionManager.xcconfig */;
+			baseConfigurationReference = 75598FD88FAAF9BF27A14E856DFB82C5 /* JXCollectionManager.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -625,7 +625,7 @@
 		};
 		DE54BF8EA0E2EACA226523E4E0B603F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F3C510A9E63D6C4EB78E1FB42410A37 /* JXCollectionManager.xcconfig */;
+			baseConfigurationReference = 75598FD88FAAF9BF27A14E856DFB82C5 /* JXCollectionManager.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -658,7 +658,7 @@
 		};
 		E30D06D6440E726378F30B527D4C5079 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB872DB8BEA0E43036963ACEAD278644 /* JXTableManager.xcconfig */;
+			baseConfigurationReference = B180D8BA60A3CC4B101956DCA4DB2D63 /* JXTableManager.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";

@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "TableManager.h"
+#import "JXTableManager.h"
 
 FOUNDATION_EXPORT double JXTableManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char JXTableManagerVersionString[];

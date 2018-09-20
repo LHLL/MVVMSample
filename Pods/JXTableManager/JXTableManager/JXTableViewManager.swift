@@ -1,6 +1,6 @@
 //
-//  TableViewManager.swift
-//  TableViewManager
+//  JXTableViewManager.swift
+//  JXTableViewManager
 //
 //  Created by Jay, Xu on 4/2/17.
 //  Copyright © 2017 Joker. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class TableViewManager: NSObject {
+public class JXTableViewManager: NSObject {
     
     internal var vms: [Manageable] = [Manageable]()
     internal var dataContainer: [UnsafeMutableRawPointer:[Array<Any>]] = [:]
@@ -38,7 +38,7 @@ public class TableViewManager: NSObject {
     }
 }
 
-extension TableViewManager: UITableViewDataSource {
+extension JXTableViewManager: UITableViewDataSource {
     
     public func numberOfSections(in tableView: UITableView) -> Int {
         guard let sections = dataContainer[Unmanaged.passUnretained(tableView).toOpaque()] else{return 0}
@@ -90,7 +90,7 @@ extension TableViewManager: UITableViewDataSource {
     
 }
 
-extension TableViewManager: UITableViewDelegate {
+extension JXTableViewManager: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myBeautifulList: UICollectionView!
     
-    private var manager = CollectionManager()
+    private var manager = JXCollectionManager()
     
     //MARK: Life Cycle
     override func viewDidLoad() {

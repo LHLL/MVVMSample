@@ -4,6 +4,6 @@ swift_version = 4.2
 use_frameworks!
 
 target 'MVVMSample' do
-pod "JXTableManager",:git =>"https://github.com/LHLL/TableManager.git"
-pod "JXCollectionManager", :git =>"https://github.com/LHLL/CollectionManager.git"
+pod "JXTableManager",:git =>"https://github.com/LHLL/JXTableManager.git"
+pod "JXCollectionManager",:git =>"https://github.com/LHLL/JXCollectionManager.git"
 end

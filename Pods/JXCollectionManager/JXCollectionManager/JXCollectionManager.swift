@@ -1,6 +1,6 @@
 //
-//  CollectionManager.swift
-//  CollectionManager
+//  JXCollectionManager.swift
+//  JXCollectionManager
 //
 //  Created by Jay, Xu on 4/2/17.
 //  Copyright © 2017 Joker. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class CollectionManager:NSObject {
+public class JXCollectionManager:NSObject {
     
     internal var vms:[Manageable] = [Manageable]()
     internal var dataContainer: [UnsafeMutableRawPointer:[Any]] = [:]
@@ -28,7 +28,7 @@ public class CollectionManager:NSObject {
     }
 }
 
-extension CollectionManager:UICollectionViewDataSource {
+extension JXCollectionManager:UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let rows = dataContainer[Unmanaged.passUnretained(collectionView).toOpaque()] else{return 0}
@@ -50,11 +50,11 @@ extension CollectionManager:UICollectionViewDataSource {
     }
 }
 
-extension CollectionManager:UICollectionViewDelegateFlowLayout{
+extension JXCollectionManager:UICollectionViewDelegateFlowLayout{
     
    public func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+                              layout collectionViewLayout: UICollectionViewLayout,
+                              sizeForItemAt indexPath: IndexPath) -> CGSize {
         for vm in vms{
             guard let rows = dataContainer[Unmanaged.passUnretained(collectionView).toOpaque()] else{continue}
             guard vm.type == object_getClass(rows[indexPath.row]) else{continue}
